@@ -6,7 +6,7 @@
 }
 
 body {
-    margin: 0 26%;
+    margin: 0 25.1%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -39,7 +39,6 @@ header nav ul li {
 
 main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -51,7 +50,7 @@ main {
     background-color: #FBDFDB;
     border-radius: 30px;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .banner_title  {
@@ -71,16 +70,17 @@ main {
 }
 
 .banner_image {
-    padding: 65px 0px 0 20px ;
+    padding: 65px 0px 0 150px ;
 }
 
 .receitas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0 40px 0;
 }
 
 .card {
-    margin: 10px 20px 10px 0;
+    margin: 0px 20px 20px 0;
     
 }
 
@@ -89,11 +89,33 @@ main {
     width: 300px;
     height: 140px;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-/* 
+.card p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #111111;
+    font-weight: normal;
+}
+
+
 footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 62px;
     background-color: #EEEEEE ;
-} */
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+}

@@ -128,6 +128,29 @@ main {
     font-weight: normal;
 }
 
+.card img, h3:hover{
+    cursor: pointer;
+}
+
+/* --- MODAL ---*/
+
+.modalOverlay {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+
+.modal {
+    
+}
+.active {
+    visibility: visible;
+}
 
 footer {
     display: flex;

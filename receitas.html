@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="./assets/img/logo.png" alt="Foodfy">
+        <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="Foodfy">
+        </a>
         <nav>
             <ul>
                 <li><a href="./sobre.html">Sobre</a></li>
@@ -19,81 +21,92 @@
 
     <main class="content">
         <section class="receitas">
-            <article class="card">
+            <article class="card" id="burger">
                 <img src="./assets/img/burger.png" alt="">
-                <h3>Triplo bacon burger</h3>
-                <p>por Jorge Relato</p>
+                <h2 class="t--small t--secondary">Triplo bacon burger</h2>
+                <p class="t--extra--small t--subtitle">por Jorge Relato</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="pizza">
                 <img src="./assets/img/pizza.png" alt="">
-                <h3>Pizza 4 estações</h3>
-                <p>por Fabiana Melo</p>
+                <h2 class="t--small t--secondary">Pizza 4 estações</h2>
+                <p class="t--extra--small t--subtitle">por Fabiana Melo</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="espaguete">
                 <img src="./assets/img/espaguete.png" alt="">
-                <h3>Espaguete ao alho</h3>
-                <p>por Júlia Kinoto</p>
+                <h2 class="t--small t--secondary">Espaguete ao alho</h2>
+                <p class="t--extra--small t--subtitle">por Júlia Kinoto</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="lasanha">
                 <img src="./assets/img/lasanha.png" alt="">
-                <h3>Lasanha mac n’ cheese</h3>
-                <p>por Juliano Vieira</p>
+                <h2 class="t--small t--secondary">Lasanha mac n’ cheese</h2>
+                <p class="t--extra--small t--subtitle">por Juliano Vieira</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="doce">
                 <img src="./assets/img/doce.png" alt="">
-                <h3>Docinhos pão-do-céu</h3>
-                <p>por Ricardo Golvea</p>
+                <h2 class="t--small t--secondary">Docinhos pão-do-céu</h2>
+                <p class="t--extra--small t--subtitle">por Ricardo Golvea</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="asinhas">
                 <img src="./assets/img/asinhas.png" alt="">
-                <h3>Asinhas de frango ao barbecue</h3>
-                <p>por Vania Steroski</p>
+                <h2 class="t--small t--secondary">Asinhas de frango ao barbecue</h2>
+                <p class="t--extra--small t--subtitle">por Vania Steroski</p>
             </article>
 
-            <article class="card">
+            <article class="card" id="burger">
                 <img src="./assets/img/burger.png" alt="">
-                <h3>Triplo bacon burger</h3>
-                <p>por Jorge Relato</p>
+                <h2 class="t--small t--secondary">Triplo bacon burger</h2>
+                <p class="t--extra--small t--subtitle">por Jorge Relato</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="pizza">
                 <img src="./assets/img/pizza.png" alt="">
-                <h3>Pizza 4 estações</h3>
-                <p>por Fabiana Melo</p>
+                <h2 class="t--small t--secondary">Pizza 4 estações</h2>
+                <p class="t--extra--small t--subtitle">por Fabiana Melo</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="espaguete">
                 <img src="./assets/img/espaguete.png" alt="">
-                <h3>Espaguete ao alho</h3>
-                <p>por Júlia Kinoto</p>
+                <h2 class="t--small t--secondary">Espaguete ao alho</h2>
+                <p class="t--extra--small t--subtitle">por Júlia Kinoto</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="lasanha">
                 <img src="./assets/img/lasanha.png" alt="">
-                <h3>Lasanha mac n’ cheese</h3>
-                <p>por Juliano Vieira</p>
+                <h2 class="t--small t--secondary">Lasanha mac n’ cheese</h2>
+                <p class="t--extra--small t--subtitle">por Juliano Vieira</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="doce">
                 <img src="./assets/img/doce.png" alt="">
-                <h3>Docinhos pão-do-céu</h3>
-                <p>por Ricardo Golvea</p>
+                <h2 class="t--small t--secondary">Docinhos pão-do-céu</h2>
+                <p class="t--extra--small t--subtitle">por Ricardo Golvea</p>
             </article>
     
-            <article class="card">
+            <article class="card" id="asinhas">
                 <img src="./assets/img/asinhas.png" alt="">
-                <h3>Asinhas de frango ao barbecue</h3>
-                <p>por Vania Steroski</p>
+                <h2 class="t--small t--secondary">Asinhas de frango ao barbecue</h2>
+                <p class="t--extra--small t--subtitle">por Vania Steroski</p>
             </article>
         </section>
     </main>
+
+    <div class="modalOverlay">
+        <div class="modal">
+            <img src="./assets/img/asinhas.png" alt="">
+            <h1 class="t--large t--secondary">Asinhas de frango ao barbecue</h1>
+            <p class="t--small  t--subtitle">por Vania Steroski</p>
+            <a class="modal_close" href="">Fechar modal</a>
+        </div>
+    </div>
+
     <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
+        <p class="t--extra--small t--subtitle">Todos direitos reservados, receitas Foodfy.</p>
     </footer>
+    <script src="./assets/js/scripts.js"></script>  
 </body>
 </html>

@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+    <main class="content">
+        <h1 class="t--large">Mais acessadas</h1>
+        <section class="receitas">
+
+            {% for item in  items %}
+
+            <article class="card" id="{{item.id}}">
+                <img src="./img/{{item.image}}" alt="">
+                <h2 class="t--small t--secondary">{{item.title}}</h2>
+                <p class="t--extra--small t--subtitle">{{item.author}}</p>
+            </article>
+
+            {% endfor %}
+    
+        </section>
+    </main>
+
+{% endblock %}

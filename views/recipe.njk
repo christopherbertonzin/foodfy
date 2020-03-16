@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+    <main class="content">
+        <section class="receipe--title">
+            <div>
+                <img src="./img/{{item.image}}">
+            </div>
+            <h1 class="t--extra--large">{{item.title}}</h1>
+            <p class="t--medium t--subtitle">{{item.author}}</p>
+        </section>
+
+        <section class="receipe--ingredients">
+            <h1 class="t--large">Ingredientes</h1>
+            {% for i in item.ingredients %}
+                <ul>
+                    <li>{{i}}</li>
+                </ul>
+            {% endfor %}
+        </section>
+
+        <section class="receipe--preparation--mode">
+            <h1 class="t--large">Modo de preparo</h1>
+            {% for i in item.preparation %}
+                <ul>
+                    <li>{{i}}</li>
+                </ul>
+            {% endfor %}
+        </section>  
+
+        <section class="receipe--information">
+            <h1 class="t--large">Informações adicionais</h1>
+            <p class="t--medium">{{item.information}}</p>
+        </section>
+    </main>
+    
+{% endblock %}

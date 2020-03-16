@@ -14,13 +14,22 @@ nunjucks.configure('views', { express: server, noCache: true})
 // ROUTES
 server.get('/', (req, res) => res.render('index', { items }))
 server.get('/recipes', (req, res) => res.render('recipes', { items }))
-server.get('/about', (req, res) => res.render('about'))
+server.get("/recipe", (req, res) => {
+    const recipeId = req.query.id
 
-server.get('/recipes/:index', (req, res) => {
-    const recipes = items
-    const recipesIndex = req.params.index;
+    const recipe = items.find(function(recipe) {
+        if (recipe.id == recipeId) {
+            return true
+        }
+    })
+    if (!recipe) {
+        return res.send('Recipe not found')
+    }
+    res.render('recipe', {item: recipe})
+    
 })
 
+server.get('/about', (req, res) => res.render('about'))
 server.use((req,res) => {
     res.status(404).render('not-found')
 })

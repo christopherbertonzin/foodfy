@@ -3,6 +3,8 @@
 {% block content %}
 
     <main class="content">
+
+        {# banner #}
         <section class="receipe--title">
             <div>
                 <img src="./img/{{item.image}}">
@@ -11,28 +13,33 @@
             <p class="t--medium t--subtitle">{{item.author}}</p>
         </section>
 
-        <section class="receipe--ingredients">
-            <h1 class="t--large">Ingredientes</h1>
-            {% for i in item.ingredients %}
-                <ul>
-                    <li>{{i}}</li>
-                </ul>
-            {% endfor %}
-        </section>
+        {# content #}
+        <section class="recipe">
 
-        <section class="receipe--preparation--mode">
-            <h1 class="t--large">Modo de preparo</h1>
-            {% for i in item.preparation %}
-                <ul>
-                    <li>{{i}}</li>
-                </ul>
-            {% endfor %}
-        </section>  
+            <h1 class="t--large">Ingredientes <a id="btn--display" >MOSTRAR</a></h1>
+            <div class="recipe--content">
+                {% for i in item.ingredients %}
+                    <ul>
+                        <li class="t--small t--paragraph">{{i}}</li>
+                    </ul>
+                {% endfor %}
+            </div>
 
-        <section class="receipe--information">
-            <h1 class="t--large">Informações adicionais</h1>
-            <p class="t--medium">{{item.information}}</p>
+            <h1 class="t--large">Modo de preparo <a href="" id="btn--display" >MOSTRAR</a></h1>
+            <div class="recipe--content">
+                {% for i in item.preparation %}
+                     <ul>
+                         <li class="t--small t--paragraph">{{i}}</li>
+                     </ul>
+                {% endfor %}  
+            </div>
+
+            <h1 class="t--large">Informações adicionais <a href="" id="btn--display" >MOSTRAR</a></h1>
+            <div class="recipe--content">
+                <p class="t--small t--paragraph">{{item.information}}</p>
+            </div>
         </section>
     </main>
+    <script src="./js/scripts.js"></script>
     
 {% endblock %}

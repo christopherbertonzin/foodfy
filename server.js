@@ -23,7 +23,7 @@ server.get("/recipe", (req, res) => {
         }
     })
     if (!recipe) {
-        return res.send('Recipe not found')
+        return res.render('not-found')
     }
     res.render('recipe', {item: recipe})
     

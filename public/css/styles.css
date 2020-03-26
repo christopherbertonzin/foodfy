@@ -156,6 +156,9 @@ main {
 
 /* ==== RECEIPE ==== */
 
+.recipe h1{
+    margin-top: 30px;
+}
 
 .receipe--title img {
     width: 100%;
@@ -172,14 +175,15 @@ main {
 .recipe--content {
     margin-top: 15px;
     margin-bottom: 40px;
-    /* visibility: hidden; */
+    visibility: visible;
 }
 
-.receipe--active {
+.recipe--active {
+    display: none;
     visibility: hidden;
 }
 
-#btn--display {
+.btn--display {
     font-size: 14px;
     color: #999999;
     text-decoration: none;

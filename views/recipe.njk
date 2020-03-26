@@ -16,8 +16,8 @@
         {# content #}
         <section class="recipe">
 
-            <h1 class="t--large">Ingredientes <a id="btn--display" >MOSTRAR</a></h1>
-            <div class="recipe--content">
+            <h1 class="t--large">Ingredientes <a class="btn--display" id="1">ESCONDER</a></h1>
+            <div class="recipe--content" id="show--hide--1">
                 {% for i in item.ingredients %}
                     <ul>
                         <li class="t--small t--paragraph">{{i}}</li>
@@ -25,8 +25,8 @@
                 {% endfor %}
             </div>
 
-            <h1 class="t--large">Modo de preparo <a href="" id="btn--display" >MOSTRAR</a></h1>
-            <div class="recipe--content">
+            <h1 class="t--large">Modo de preparo <a class="btn--display" id="2">ESCONDER</a></h1>
+            <div class="recipe--content" id="show--hide--2">
                 {% for i in item.preparation %}
                      <ul>
                          <li class="t--small t--paragraph">{{i}}</li>
@@ -34,12 +34,12 @@
                 {% endfor %}  
             </div>
 
-            <h1 class="t--large">Informações adicionais <a href="" id="btn--display" >MOSTRAR</a></h1>
-            <div class="recipe--content">
+            <h1 class="t--large">Informações adicionais <a class="btn--display" id="3">ESCONDER</a></h1>
+            <div class="recipe--content" id="show--hide--3">
                 <p class="t--small t--paragraph">{{item.information}}</p>
             </div>
         </section>
     </main>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/showRide.js"></script>
     
 {% endblock %}

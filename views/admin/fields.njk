@@ -1,0 +1,80 @@
+<div id="ingredients">
+    <h1 class="t--small">Autor</h1>
+    
+    <div class="ingredient">
+        <input 
+            type="text" 
+            name="author" 
+            value="{{recipe.author}}" 
+            placeholder="Ex: Christopher Moreto Bertonzin" 
+            />
+    </div>
+</div>
+
+<div id="ingredients">
+    <h1 class="t--small">Nome</h1>
+    
+    <div class="ingredient">
+        <input 
+            type="text" 
+            name="title" 
+            value="{{recipe.title}}" 
+            placeholder="Ex: Doce de amendoin" 
+            />
+    </div>
+</div>
+
+<div id="ingredients">
+    <h1 class="t--small">Imagem da receita</h1>
+    
+    <div class="ingredient">
+        <input 
+            type="text" 
+            name="image" 
+            value="{{recipe.image}}" 
+            placeholder="Ex: http://localhost/public/img/img.png" 
+            />
+    </div>
+</div>
+
+<div id="ingredients">
+    <h1 class="t--small">Ingredientes</h1>
+    
+    <div class="ingredient">
+        <input 
+            type="text" 
+            name="ingredients[]" 
+            value="{{recipe.ingredients}}" 
+            placeholder="Ex: 6 ovos"
+            />
+    </div>
+
+    <button type="button" class="add-ingredient">Adicionar um novo Ingrediente</button>
+</div>
+
+<div id="ingredients">
+    <h1 class="t--small">Modo de preparo</h1>
+    
+    <div class="ingredient">
+        <input 
+            type="text" 
+            name="preparation[]" 
+            value="{{recipe.preparation}}" 
+            placeholder="Ex: Adicionar uma colher de açucar" 
+            />
+    </div>
+
+    <button type="button" class="add-ingredient">Adicionar um novo passo</button>
+</div>
+
+<div id="ingredients">
+    <h1 class="t--small">Informações adicionais</h1>
+    
+    <div class="ingredient">
+        <textarea 
+            name="information" 
+            cols="30" 
+            rows="10"
+            >{{recipe.information}}</textarea>
+    </div>
+</div>

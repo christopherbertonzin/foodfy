@@ -1,0 +1,45 @@
+{% extends 'admin/layout-adm.njk' %}
+
+{% block content %}
+
+    <main class="content">
+        <div class="content--header">
+            <h1 class="t--large">Receita: {{item.title}}</h1>
+            <a class=""href="{{item.id}}/edit">Editar receita</a>
+        </div>
+        
+        <section class="receipe--title">
+            <div>
+                <img src="/img/{{item.image}}">
+            </div>
+            <h1 class="t--extra--large">{{item.title}}</h1>
+            <p class="t--medium t--subtitle">{{item.author}}</p>
+        </section>
+
+        <section class="recipe">
+
+            <h1 class="t--large">Ingredientes</h1>
+            <div class="recipe--content" id="show--hide--1">
+                {% for i in item.ingredients %}
+                    <ul>
+                        <li class="t--small t--paragraph">{{i}}</li>
+                    </ul>
+                {% endfor %}
+            </div>
+
+            <h1 class="t--large">Modo de preparo</h1>
+            <div class="recipe--content" id="show--hide--2">
+                {% for i in item.preparation %}
+                     <ul>
+                         <li class="t--small t--paragraph">{{i}}</li>
+                     </ul>
+                {% endfor %}  
+            </div>
+
+            <h1 class="t--large">Informações adicionais</h1>
+            <div class="recipe--content" id="show--hide--3">
+                <p class="t--small t--paragraph">{{item.information}}</p>
+            </div>
+        </section>
+    </main>    
+{% endblock %}

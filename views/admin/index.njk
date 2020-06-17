@@ -1,0 +1,25 @@
+{% extends 'admin/layout-adm.njk' %}
+
+{% block content %}
+    
+    <main>
+
+        <h1 class="t--large">Gerenciar receitas</h1>
+        <section class="receitas">
+
+        {% for item in  items %}
+
+        <article class="card" id="{{item.id}}">
+            <img src="/img/{{item.image}}" alt="">
+            <div>
+                <h2 class="t--small t--secondary">{{item.title}}</h2>
+                <p class="t--extra--small t--subtitle">{{item.author}}</p>
+                <a href="/admin/recipes/{{item.id}}">Vizualizar</a>
+            </div>
+        </article>
+
+        {% endfor %}
+    </main>
+    
+    </section>
+{% endblock content %}
